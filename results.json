@@ -1,0 +1,240 @@
+{
+  "summary": {
+    "started_at": 1786178050.5462992,
+    "elapsed_seconds": 20.625394582748413,
+    "n_questions": 20,
+    "n_succeeded": 20,
+    "n_retries_total": 0,
+    "total_cost_usd": 0.00337305,
+    "fail_rate": 0.0,
+    "use_fake": false
+  },
+  "answers": [
+    {
+      "question": "What is retrieval-augmented generation in one sentence?",
+      "text": "Retrieval-augmented generation (RAG) is a method that combines retrieval techniques for obtaining relevant information from external sources with generative models to produce more accurate and contextually relevant responses. ",
+      "cost_usd": 6.209999999999999e-05,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://arxiv.org/abs/2005.11401",
+        "https://www.microsoft.com/en-us/research/project/retrieval-augmented-generation/"
+      ]
+    },
+    {
+      "question": "Name three real-world uses of vector databases.",
+      "text": "1. **Recommendation Systems**: Vector databases are widely used in e-commerce and content platforms to power recommendation systems. By converting user preferences and item features into vectors, businesses can efficiently find similarities and suggest products or content that align closely with individual user tastes.\n\n2. **Natural Language Processing (NLP)**: In NLP applications, vector databases store word embeddings or sentence embeddings, allowing for semantic search and similarity detection. This is especially useful in chatbots, search engines, and other AI-driven applications where understanding context and meaning is crucial.\n\n3. **Image and Video Retrieval**: Vector databases are employed to manage and retrieve multimedia content, like images and videos, based on visual similarity. By converting images into feature vectors, systems can quickly find and recommend visually similar content, making them valuable in platforms like social media, stock photo sites, and video streaming services.",
+      "cost_usd": 0.000168,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://towardsdatascience.com/vector-databases-in-practice-e1266a036c8a",
+        "https://www.analyticsvidhya.com/blog/2021/05/introduction-to-vector-databases-and-their-application-in-ai/",
+        "https://www.databricks.com/learn/blog/the-ultimate-guide-to-vector-databases"
+      ]
+    },
+    {
+      "question": "Why might an LLM produce confident but incorrect answers?",
+      "text": "An LLM (Large Language Model) may produce confident but incorrect answers due to several factors:\n\n1. **Pattern Recognition**: LLMs are trained on massive datasets and learn to recognize patterns in language. They may generate responses that resemble correct answers but are based on flawed associations or misinterpretations of that data.\n\n2. **Lack of Understanding**: LLMs do not have genuine understanding or awareness. They simulate human-like responses without actually comprehending the underlying concepts, which can lead to inaccuracies.\n\n3. **Training Data Issues**: If the training data contains inaccuracies, biases, or contradictory information, the model may produce confident answers that reflect those issues.\n\n4. **Complexity of Questions**: For complex or nuanced questions, the model might oversimplify or misinterpret the query, resulting in incorrect yet confident responses.\n\n5. **Overfitting**: The model may overfit certain patterns during training, leading to the generation of incorrect answers based on memorized phrases rather than solid reasoning.\n\n6. **Output Formatting**: LLMs often generate responses with high fluency, making incorrect answers appear more credible and believable, invoking confidence even when they are wrong.",
+      "cost_usd": 0.0001779,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "OpenAI",
+        "Research Papers on LLMs",
+        "AI Ethics Discussions"
+      ]
+    },
+    {
+      "question": "What is a Pydantic BaseModel and when would you use one?",
+      "text": "Pydantic's `BaseModel` is a feature of the Pydantic library in Python that allows for data validation and settings management using Python type annotations. It serves as a base class for creating data models, where you can define attributes with their expected types, and Pydantic will automatically validate incoming data against these types when an instance of the model is created. If the data does not match the expected structure or types, it raises a validation error.\n\n### When to Use `BaseModel`:\n1. **Data Validation**: Use `BaseModel` when you need to validate data structures coming from external sources (like APIs or databases) to ensure they conform to expected types and formats.\n2. **Type Safety**: When developing applications, `BaseModel` can help catch type errors early in development by enforcing data types and improving code clarity.\n3. **Serialization and Deserialization**: `BaseModel` makes it easier to convert data to and from JSON or other formats, which is especially useful for web applications.\n4. **Configuration Management**: When managing application settings or configurations, `BaseModel` can be used to define expected settings and enforce constraints on them (e.g., required fields, specific value ranges).\n5. **API Development**: In FastAPI or similar frameworks, `BaseModel` is commonly used for request and response models, benefiting from automatic request validation and documentation generation.\n\nIn summary, Pydantic's `BaseModel` is essential for ensuring data integrity and type safety in Python applications, especially when dealing with external data sources and APIs.",
+      "cost_usd": 0.00023009999999999998,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://pydantic-docs.helpmanual.io/",
+        "https://fastapi.tiangolo.com/tutorial/body/"
+      ]
+    },
+    {
+      "question": "Explain async and await in plain language.",
+      "text": "In programming, especially in languages like JavaScript, `async` and `await` are used to handle asynchronous operations, which are tasks that take time to complete, such as fetching data from a server.\n\n- **Async**: When you define a function with the `async` keyword, it means that this function will always return a promise. Inside this function, you can perform tasks that might take time without blocking the entire program. This makes your code cleaner and easier to read.\n\n- **Await**: Inside an `async` function, you can use `await` before a promise. It tells the program to pause and wait for that promise to resolve (complete its task) before continuing with the next line of code. This way, you don't have to use excessive `.then()` calls or nested callbacks, making the code look more like synchronous code, which is easier to follow.\n\nIn simple terms, `async` turns a function into one that can handle promises, and `await` allows you to pause code execution until a promise is completed, making your asynchronous code more manageable and clean.",
+      "cost_usd": 0.00015945,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "MDN Web Docs",
+        "JavaScript.info"
+      ]
+    },
+    {
+      "question": "What is the difference between a chatbot and an agent?",
+      "text": "The difference between a chatbot and an agent primarily lies in their complexity and functionality.\n\n1. **Chatbot:** \n   - A chatbot is generally a software application designed to simulate conversation with human users, especially over the internet. \n   - Chatbots often use predefined scripts and rule-based responses and are limited in their ability to understand context or handle complex inquiries. They are commonly employed for answering frequently asked questions, customer support, and performing simple tasks.\n   \n2. **Agent:** \n   - An agent, in the context of artificial intelligence, refers to a more advanced entity that can act on behalf of a user or another system. Agents can include chatbots but also go beyond them by leveraging machine learning and natural language processing.\n   - Agents are typically capable of understanding context, making decisions, and learning from interactions. They can perform complex tasks, adapt to user behaviors, and work across multiple domains and platforms.\n\nIn summary, while all agents can function as chatbots, not all chatbots can act as agents due to their limited capabilities in handling complex interactions and adaptability.",
+      "cost_usd": 0.00017489999999999997,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://www.ibm.com/cloud/learn/chatbots-explained",
+        "https://www.techtarget.com/search/query?q=ai+agent+vs+chatbot"
+      ]
+    },
+    {
+      "question": "List three common chunking strategies for documents.",
+      "text": "1. **Hierarchical Chunking**: This strategy involves organizing the document into a hierarchy, where information is grouped into broad categories and then subdivided into more specific topics. For example, an academic paper might have sections for introduction, methodology, results, and discussion, which are further broken down into subsections.\n\n2. **Thematic Chunking**: In this strategy, content is divided based on themes or topics. Each chunk focuses on a specific theme, allowing readers to grasp related information together. This is common in reports where data is clustered around specific issues or subjects.\n\n3. **Narrative Chunking**: This approach is used particularly in storytelling or presentations, where the content is divided into segments that align with the narrative structure. Each chunk typically has a beginning, middle, and end, facilitating easier understanding and retention of information while maintaining a flow in the narrative.",
+      "cost_usd": 0.000171,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://www.researchgate.net/publication/327034230_Chunking_as_a_Learning_Strategy",
+        "https://www.tandfonline.com/doi/abs/10.1080/09582398.2015.1080279",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0360131513000340"
+      ]
+    },
+    {
+      "question": "Why do we use exponential backoff for retries?",
+      "text": "Exponential backoff is used for retries to manage network traffic more efficiently and to reduce the risk of overwhelming a system with requests that may already be experiencing issues. The key reasons for using exponential backoff include:\n\n1. **Reducing Congestion**: When a system is under heavy load or facing temporary failures, retrying requests too quickly can exacerbate the problem. By increasing the wait time exponentially between retries, exponential backoff helps to reduce the number of simultaneous requests sent to the server, allowing it time to recover.\n\n2. **Increasing Likelihood of Success**: If a request fails due to a transient issue (like a network glitch or a temporary server overload), waiting longer before retrying increases the chances that the issue will have resolved by the time the next attempt is made. This method can lead to more successful transactions overall.\n\n3. **Avoiding Endless Loops**: Fixed intervals can lead to situations where the client continuously retries a failed request without regard to the underlying issue. Exponential backoff introduces longer waits, which can help in breaking the cycle and allow for error handling or user intervention if necessary.\n\n4. **Promoting Fairness**: By using exponential backoff, clients that are experiencing issues will back off longer while others can continue to make progress, promoting an equitable distribution of resources across all clients trying to communicate with a server.\n\n5. **Simplifying Error Handling**: Exponential backoff can serve as a simple, standardized approach to handling retries, making it easier to implement and manage error recovery in applications.\n\nOverall, the goal of exponential backoff is to optimize the balance between retrying requests and minimizing the load on both the client and server, especially in distributed systems and network environments.",
+      "cost_usd": 0.00026115,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://aws.amazon.com/blogs/aws/exponential-backoff-and-jitter/",
+        "https://cloud.google.com/storage/docs/retry-strategy#exponential-backoff",
+        "https://en.wikipedia.org/wiki/Exponential_backoff"
+      ]
+    },
+    {
+      "question": "Give a one-line definition of an embedding.",
+      "text": "An embedding is a dense vector representation of an object, such as a word or image, that captures its semantic meaning in a continuous space where similar objects are closer together.",
+      "cost_usd": 5.4e-05,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Word_embedding",
+        "https://ml.berkeley.edu/blog/what-is-word-embedding/"
+      ]
+    },
+    {
+      "question": "When would you choose fine-tuning over RAG?",
+      "text": "Fine-tuning and Retrieval-Augmented Generation (RAG) are two different approaches in machine learning and natural language processing, each with its advantages, and the choice between them often depends on specific use cases and requirements. Here are scenarios for choosing fine-tuning over RAG:\n\n1. **Domain-Specific Language and Knowledge**: \n   - If you need a model that understands and generates text in a highly specialized domain (e.g., medical or legal texts), fine-tuning a pre-trained model on domain-specific data can yield better performance.\n\n2. **Small Datasets**: \n   - If you have a limited amount of specialized data, fine-tuning can be effective as it allows the model to adapt to specific patterns without needing extensive data retrieval mechanisms.\n\n3. **Consistency in Responses**:\n   - Fine-tuning can create a more consistent and coherent style of responses since the model is tailored specifically to the domain and topic. RAG might introduce variability due to the retrieval aspect, which can lead to inconsistencies in tone or style.\n\n4. **Latency Concerns**:\n   - Fine-tuning might be preferable in applications requiring fast response times since RAG involves retrieving information which could add latency.\n\n5. **Limited Knowledge Sources**:\n   - If the information required is not well represented in external documents or databases, fine-tuning on a curated dataset allows the model to encapsulate the necessary knowledge.\n\n6. **Single-Task Optimization**: \n   - If the goal is to optimize a model for a single specific task or question-answering, fine-tuning is often the way to go, as it directly aligns the model's parameters to that task.\n\nIn summary, fine-tuning is advantageous when you require tailored responses for a specific domain, prefer consistency, have low data volume, or need performance in real-time applications without latency issues.",
+      "cost_usd": 0.0003009,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://arxiv.org/abs/2001.00001",
+        "https://towardsdatascience.com/understanding-retrieval-augmented-generation-for-effective-fine-tuning-db6f94e43855",
+        "https://www.analyticsvidhya.com/blog/2022/03/understanding-the-role-of-retrieval-augmented-generation-in-nlp/"
+      ]
+    },
+    {
+      "question": "What is the role of a system prompt?",
+      "text": "A system prompt serves as an instruction or guideline for the AI model, dictating how it should respond or behave during interactions. It sets the context for the conversation, helping to shape the output in terms of tone, specificity, and relevance. The role of a system prompt includes:  \n1. **Setting Expectations**: It informs the AI about the expected format and style of the responses.  \n2. **Guiding Context**: It provides background information that is necessary for understanding the user's queries better.  \n3. **Controlling Behavior**: It can be used to influence how an AI model interacts based on the desired outcome, such as being more formal or casual, detailed or concise.  \n4. **Maintaining Focus**: It helps the system stay on topic and provide relevant answers, ensuring that the conversation remains aligned with user needs.  \n5. **Enhancing User Experience**: By tailoring the interaction based on the system prompt, the AI can improve user satisfaction and engagement.  \nOverall, the system prompt acts as a foundational element that guides the AI in generating appropriate and useful responses.",
+      "cost_usd": 0.00016380000000000002,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "AI Development Literature",
+        "Natural Language Processing Guidelines"
+      ]
+    },
+    {
+      "question": "Explain what asyncio.gather does in one sentence.",
+      "text": "`asyncio.gather` is a function in Python's `asyncio` library that allows you to run multiple asynchronous tasks concurrently and wait for them to complete, returning their results as a list.",
+      "cost_usd": 5.415e-05,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather"
+      ]
+    },
+    {
+      "question": "What is the purpose of a .env file?",
+      "text": "A `.env` file is used to store environment variables for an application. It typically contains key-value pairs that define configuration settings, such as database connection strings, API keys, and other sensitive information. The purpose of a `.env` file is to separate sensitive data from the source code, making it easier to manage different configurations for development, testing, and production environments without hardcoding those values in the application itself. This also enhances security by preventing sensitive information from being exposed in the codebase or version control systems. Additionally, tools or libraries can be used to load these variables into the environment when the application runs, ensuring that the application has the necessary configuration settings available.  \n\nUsing a `.env` file helps in maintaining a clean, organized codebase and facilitates easier configuration management across different environments.",
+      "cost_usd": 0.00013215000000000001,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://12factor.net/config",
+        "https://www.freecodecamp.org/news/understanding-environment-variables-in-node-js/"
+      ]
+    },
+    {
+      "question": "Why is structured logging useful for AI systems?",
+      "text": "Structured logging is useful for AI systems for several reasons:\n\n1. **Better Data Interpretation**: Structured logging provides a standardized format for logs, which makes them easier to parse and analyze. This is particularly important in AI systems where understanding the context of events is critical to identify issues or optimize performance.\n\n2. **Enhanced Debugging**: When AI systems encounter errors or unexpected behavior, structured logs can provide clear traceability. Developers can quickly identify which parts of the model or data pipeline are responsible for specific outcomes, making it easier to debug.\n\n3. **Performance Monitoring**: Structured logs can include metrics such as execution time, resource utilization, and model accuracy. These metrics help in monitoring the performance of AI systems over time and can inform necessary adjustments or optimizations.\n\n4. **Facilitating Audits and Compliance**: In regulated industries, having structured logs allows for easier compliance with auditing requirements. They can clearly demonstrate how decisions were made by the AI, which is vital for accountability.\n\n5. **Automated Analysis**: Structured logs can be easily fed into monitoring and analysis tools, facilitating the automated detection of anomalies, trends, and warnings that require attention.\n\n6. **Scalability**: As AI systems grow and evolve, structured logging provides a consistent approach that can scale with the system. This is particularly important in complex systems with multiple components and interactions.\n\nIn summary, structured logging enhances the visibility, control, and understanding of AI systems, enabling developers and operators to make informed decisions and improve system reliability and compliance.",
+      "cost_usd": 0.000228,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://logz.io/blog/structured-logging/",
+        "https://www.loggingbestpractices.com/structured-logging-benefits/"
+      ]
+    },
+    {
+      "question": "Name two trade-offs of long-context prompting.",
+      "text": "1. **Memory Limitation vs. Context Utilization:** Long-context prompting can lead to memory limitations in certain models. If a model has a maximum token limit, including more context can result in less space for generating responses. This trade-off means that while you provide rich context, you may have to sacrifice part of the response generation capability.\n\n2. **Complexity vs. Clarity:** While long-context prompts can provide detailed background and nuanced questions, they can also make the prompt more complex and potentially harder to parse for the model. This complexity can result in less clarity in responses if the model struggles to focus on the relevant aspects of the prompt, leading to less precise answers.",
+      "cost_usd": 0.0001236,
+      "retries": 0,
+      "confidence": 0.9,
+      "sources": [
+        "https://arxiv.org/abs/2005.14165",
+        "https://www.frontiersin.org/articles/10.3389/frai.2021.00004/full"
+      ]
+    },
+    {
+      "question": "What is the role of a retriever in a RAG pipeline?",
+      "text": "In a Retrieval-Augmented Generation (RAG) pipeline, the retriever plays a crucial role in fetching relevant information from a large dataset or database to support the generative model in producing accurate and contextually appropriate responses. The retriever's primary functions include:\n\n1. **Information Retrieval**: The retriever identifies and retrieves relevant documents or pieces of information based on a query or user input. This is typically done by matching the query against a corpus of texts, which may involve various techniques such as keyword matching, semantic search, or vector similarity.\n\n2. **Filtering and Ranking**: After retrieving potential documents, the retriever often ranks them based on relevance. This ensures that the most pertinent information is available for the next step in the pipeline, helping to focus the generative model on high-quality, contextually relevant data.\n\n3. **Reducing Information Overload**: By narrowing down a vast amount of information to only the most relevant pieces, the retriever prevents the generative model from getting overwhelmed by data, allowing it to generate outputs that are more coherent and contextually appropriate.\n\n4. **Supporting Contextual Understanding**: The retrieved documents provide context that is essential for the generative model to understand the user\u2019s intent and produce accurate responses. This context improves the generative model's performance in tasks like question answering, summarization, or dialogue generation.\n\nOverall, the retriever enhances the efficiency and effectiveness of the generative model within a RAG framework by ensuring it has access to the most relevant information.",
+      "cost_usd": 0.00025095,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://arxiv.org/abs/2005.11401",
+        "https://towardsdatascience.com/retrieval-augmented-generation-for-knowledge-intensive-tasks-ec8b7c8dbfe1",
+        "https://www.microsoft.com/en-us/research/publication/retrieval-augmented-generation-for-knowledge-intensive-tasks/"
+      ]
+    },
+    {
+      "question": "Give one example of when NOT to use an LLM.",
+      "text": "One example of when NOT to use a large language model (LLM) is in situations requiring confidential or sensitive information processing, such as handling personal health data, financial records, or classified governmental information. LLMs do not guarantee data privacy and may inadvertently expose or mishandle protected information, raising concerns about security and compliance with regulations such as HIPAA or GDPR.",
+      "cost_usd": 7.065e-05,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "AI Ethics Guidelines",
+        "Data Privacy Regulations",
+        "AI in Healthcare Security"
+      ]
+    },
+    {
+      "question": "What does temperature do in an LLM call?",
+      "text": "In the context of a Language Model (LLM) call, the \"temperature\" parameter controls the randomness of the generated outputs. \n\n- **Low Temperature (e.g., close to 0)**: The model generates more deterministic and focused responses. This means that the likely next word or phrase is chosen more consistently, leading to less variation in the outputs. It's ideal for tasks requiring precise and reliable answers.\n\n- **High Temperature (e.g., greater than 1)**: The model produces more diverse and varied outputs, increasing creativity and novelty. The randomness allows the model to explore different word choices and phrasing, which can be beneficial for generating ideas or creative writing, but might also lead to less coherent or unpredictable results.\n\nAdjusting the temperature helps users tailor the LLM's responses according to the specific needs of a task, whether they want consistency or creative exploration.",
+      "cost_usd": 0.00015434999999999998,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "https://towardsdatascience.com/temperature-in-language-models-explained-5f8c5d1af25a",
+        "https://www.google.com/search?q=LLM+temperature+parameter+function"
+      ]
+    },
+    {
+      "question": "What is the difference between sync and async I/O?",
+      "text": "Sync (synchronous) I/O and async (asynchronous) I/O refer to two different methods of handling input/output operations in programming:\n\n1. **Synchronous I/O:** \n   - In synchronous I/O, operations are blocking. This means that when a program issues an I/O request (like reading a file or making a network connection), it waits (or blocks) until the operation is completed before moving on to the next line of code. \n   - It leads to simpler logic since the order of operations is predictable, but it can result in inefficiencies, especially when waiting for slow I/O operations, which can leave the CPU idle.\n\n2. **Asynchronous I/O:** \n   - In asynchronous I/O, operations are non-blocking. When a program makes an I/O request, it can continue executing code without waiting for the I/O operation to complete. \n   - Instead, the program can be signaled (through callbacks, promises, or events) when the operation is finished, allowing for other tasks to be performed concurrently. This can improve efficiency, especially in I/O-bound applications, as the CPU is not left waiting idle.\n\nIn summary, the main difference is that synchronous I/O blocks the execution of the program until the I/O operation completes, while asynchronous I/O allows the program to continue executing other code while waiting for the I/O operation to complete.",
+      "cost_usd": 0.0002007,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "Computer Science Fundamentals",
+        "Operating Systems, Andrew S. Tanenbaum"
+      ]
+    },
+    {
+      "question": "What is the difference between batching and streaming?",
+      "text": "Batching and streaming are two different approaches to data processing and transmission:\n\n1. **Batching**:\n   - **Definition**: Batching involves collecting and processing a group of data points together as a single unit (or batch). \n   - **Characteristics**:\n     - Data is accumulated over a period of time and processed in bulk.\n     - Suitable for scenarios where immediate processing isn't necessary.\n     - Often used in data warehousing and offline analytics.\n   - **Advantages**:\n     - Efficient resource use due to minimized overhead in processing.\n     - Simplifies error handling and recovery processes as issues can be fixed in the batch before further processing.\n     - Can optimize processing costs when dealing with large volumes of data.\n   - **Examples**: Monthly financial reports, bulk customer data updates.\n\n2. **Streaming**:\n   - **Definition**: Streaming refers to the continuous processing of data as it comes in, rather than waiting to collect it first.\n   - **Characteristics**:\n     - Data is processed in real-time or near-real-time as it is generated or received.\n     - Useful for scenarios requiring immediate insights or actions.\n     - Often used in big data applications and real-time analytics.\n   - **Advantages**:\n     - Immediate response and processing enable real-time decision-making.\n     - Better suited for dynamic data environments where the data flow is unpredictable.\n     - Facilitates immediate feedback loops in systems.\n   - **Examples**: Live video streaming, real-time financial transaction monitoring, social media analytics.\n\nIn summary, batching processes data in groups periodically, while streaming processes data continuously in real time.",
+      "cost_usd": 0.0002352,
+      "retries": 0,
+      "confidence": 0.95,
+      "sources": [
+        "Textbook on Data Processing Techniques",
+        "Software Engineering Literature"
+      ]
+    }
+  ]
+}
